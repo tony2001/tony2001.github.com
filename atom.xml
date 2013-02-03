@@ -1,0 +1,32 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>$tony200</title>
+  <link href="http://daylessday.org/"/>
+  <link type="application/atom+xml" rel="self" href="http://daylessday.org/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://daylessday.org/</id>
+  <author>
+    <name>Antony Dovgal</name>
+    <email>tony@daylessday.org</email>
+  </author>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>http://daylessday.org{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://daylessday.org{{ post.url }}"/>
+    <title>{{ post.title }}</title>
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>Antony Dovgal</name>
+      <uri>http://daylessday.org/</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+ 
+</feed>

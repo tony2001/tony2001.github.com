@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>$tony200</title>
+  <link href="http://daylessday.org/"/>
+  <link type="application/atom+xml" rel="self" href="http://daylessday.org/atom.xml"/>
+  <updated>2013-02-03T23:37:36+04:00</updated>
+  <id>http://daylessday.org/</id>
+  <author>
+    <name>Antony Dovgal</name>
+    <email>tony@daylessday.org</email>
+  </author>
+
+  
+ 
+</feed>

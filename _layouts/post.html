@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div id="post">
+<h3>{{ page.title }}</h3>
+{{ content }}
+
+<table border="0" width="100%">
+	<tr>
+		<td style="text-align:left" width="50%">
+		{% if page.next != null %}
+			<a class="small" href="{{ page.next.url }}">Next</a>
+		{% endif %}
+		</td>
+		<td style="text-align:right" width="50%">
+		{% if page.previous != null %}
+			<a class="small" href="{{ page.previous.url }}">Previous</a>
+		{% endif %}
+		</td>
+</table>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'tony2001';
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+ var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+ })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+																										    
