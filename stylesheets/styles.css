@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-  padding:25px;
+  margin:0;
+  padding:0;
   font:14px/1.5 Verdana, Georgia, Helvetica, Arial, sans-serif;
   color:#444;
   font-weight:300;
@@ -52,6 +53,7 @@ a.bold {
 .wrapper {
   width:960px;
   margin:0 auto;
+  padding: 10px;
 }
 
 blockquote {
@@ -167,6 +169,7 @@ section {
   width:700px;
   float:right;
   padding-bottom:50px;
+  padding-top:25px;
 }
 
 small {
