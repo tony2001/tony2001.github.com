@@ -74,7 +74,7 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
         // Create and draw the visualization.
         new google.visualization.LineChart(document.getElementById('visualization')).
           draw(data, {title: "Sequental reads (msec per 10000 ops)", fontName: "Verdana", curveType: "none", pointSize: 2,
-                        width: 800, height: 500,
+                        width: 1200, height: 800,
                       vAxis: {title: "milliseconds", minValue:0, maxValue:0.3},
                         hAxis: {title: "number of items"}}
                 );
@@ -86,7 +86,7 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
     </script>
   </head>
   <body style="font-family: Arial;border: 0 none;">
-    <div id="visualization" style="width: 500px; height: 400px;"></div>
+	 <div id="visualization" style="width: 1200px; height: 800px;"></div>
   </body>
 </html>
 
